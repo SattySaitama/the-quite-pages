@@ -3,16 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <title>2:17</title>
+  <!-- Google Fonts for horror vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <style>
+    /* General page styles */
     body {
-      <img src="file_000000004f88720784cdbd7e8a206f31.png" alt="2:17 Cover" 
-     style="width:100%; max-width:600px; display:block; margin: 0 auto; border-radius:10px;">
-      background-color: #000;
+      background-color: #000; /* dark background */
       color: #fff;
-      font-family: 'Georgia', serif;
-      padding: 50px;
+      font-family: 'Special Elite', monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Cover section */
+    .cover {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .cover img {
+      width: 80%;
+      max-width: 700px;
+      border-radius: 15px;
+    }
+    .start-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: 2px solid #ff4500;
+      border-radius: 10px;
+      color: #ff4500;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .start-button:hover {
+      background-color: #ff4500;
+      color: #000;
+    }
+
+    /* Story section */
+    .story-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: left;
       line-height: 1.8;
     }
+    .story-container p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .story-container p::first-letter {
+      font-size: 40px;
+      color: #ff4500;
+      float: left;
+      margin-right: 8px;
+      line-height: 1;
+    }
+
+    /* Headings */
+    h1 {
+      color: #ff4500;
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    /* Back to Stories button */
     a.back-button {
       display: inline-block;
       margin-top: 40px;
@@ -21,6 +77,7 @@
       border-radius: 10px;
       color: #ff4500;
       text-decoration: none;
+      transition: 0.3s;
     }
     a.back-button:hover {
       background-color: #ff4500;
@@ -30,7 +87,16 @@
 </head>
 <body>
 
-  <h1>2:17</h1>
+  <!-- Cover Section -->
+  <div class="cover">
+    <img src="file_000000004f88720784cdbd7e8a206f31.png" alt="2:17 Cover">
+    <br>
+    <a href="#story-content" class="start-button">⬇ Start Story</a>
+  </div>
+
+  <!-- Story Section -->
+  <div id="story-content" 
+  class="story-container">
 
   <p>
     The apartment was cheap in a way Brett didn’t question—
@@ -302,6 +368,7 @@ And whatever waited inside Apartment 608 was no longer patient.
   </p>
 
   <a href="stories.html" class="back-button">⬅ Back to Stories</a>
+  </div>
 
 </body>
 </html>
