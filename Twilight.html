@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Twilight</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+<style>
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background-color:#000;
+  color:#fff;
+  font-family:'Special Elite', monospace;
+  margin:0;
+}
+
+/* Cover */
+
+.cover{
+  text-align:center;
+  padding:50px 20px;
+}
+
+.cover img{
+  width:80%;
+  max-width:800px;
+  border-radius:15px;
+}
+
+.start-button{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  border:2px solid #ff4500;
+  border-radius:10px;
+  color:#ff4500;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.start-button:hover{
+  background:#ff4500;
+  color:#000;
+}
+
+/* Story */
+
+.story-container{
+  max-width:800px;
+  margin:50px auto;
+  padding:0 20px;
+  line-height:1.8;
+}
+
+.story-container p{
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.story-container p::first-letter{
+  font-size:40px;
+  color:#ff4500;
+  float:left;
+  margin-right:8px;
+}
+
+h1{
+  color:#ff4500;
+  font-size:48px;
+}
+
+/* Back button */
+
+.back-button{
+  display:inline-block;
+  margin-top:40px;
+  padding:10px 20px;
+  border:2px solid #ff4500;
+  border-radius:10px;
+  color:#ff4500;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.back-button:hover{
+  background:#ff4500;
+  color:#000;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Cover Section -->
+
+<div class="cover">
+<img src="twilight-cover.jpg" alt="Twilight Cover">
+<br>
+<a href="#story-content" class="start-button">⬇ Start Story</a>
+</div>
+
+<!-- Story Section -->
+
+<div id="story-content" class="story-container">
+
+<h1>Twilight</h1>
+<p><em>Your story tagline here</em></p>
+
+<!-- PASTE YOUR STORY BELOW -->
+
+<p>Your story paragraph 1...</p>
+
+<p>Your story paragraph 2...</p>
+
+<p>Your story paragraph 3...</p>
+
+<!-- END OF STORY -->
+
+<a href="stories.html" class="back-button">← Back to Stories</a>
+
+</div>
+
+</body>
+</html>
