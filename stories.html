@@ -1,61 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>The Quiet Pages - Stories</title>
-  <style>
-    body {
-      margin: 0;
-  padding: 50px;
+<meta charset="UTF-8">
+<title>The Quiet Pages - Stories</title>
 
-  background-image: url("file_00000000c90c72088cf16e89f2154cdb.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+<style>
 
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: multiply;
+body{
+margin:0;
+padding:50px;
 
-  color: #ffffff;
-  font-family: 'Georgia', serif;
-  text-align: center;
-    }
-    a.story-link {
-      display: block;
-      margin: 15px;
-      padding: 10px;
-      color: #ff4500;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 20px;
-      transition: 0.3s;
-    }
-    a.story-link:hover {
-      color: #ff6347;
-    }
-    a.back-button {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 10px 20px;
-      border: 2px solid #ff4500;
-      border-radius: 10px;
-      color: #ff4500;
-      text-decoration: none;
-    }
-    a.back-button:hover {
-      background-color: #ff4500;
-      color: #000;
-    }
-  </style>
+background-image:url("file_00000000c90c72088cf16e89f2154cdb.png");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+background-repeat:no-repeat;
+
+background-color:rgba(0,0,0,0.8);
+background-blend-mode:multiply;
+
+color:white;
+font-family:'Georgia', serif;
+text-align:center;
+}
+
+/* Title */
+
+h1{
+font-size:50px;
+color:#ff4500;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+p{
+opacity:0.85;
+}
+
+/* Story area glass effect */
+
+.story-section{
+margin-top:50px;
+padding:40px;
+background:rgba(0,0,0,0.6);
+border-radius:20px;
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* Story grid */
+
+.story-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+}
+
+/* Story card */
+
+.story-card{
+text-decoration:none;
+color:white;
+width:260px;
+transition:0.35s;
+}
+
+/* Cover image */
+
+.story-card img{
+width:100%;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+transition:0.35s;
+}
+
+/* Hover effect */
+
+.story-card:hover img{
+transform:translateY(-8px) scale(1.05);
+box-shadow:0 0 25px #ff4500;
+}
+
+/* Title */
+
+.story-title{
+margin-top:12px;
+font-size:22px;
+font-weight:bold;
+color:#ff4500;
+letter-spacing:1px;
+}
+
+/* Back button */
+
+.back-button{
+display:inline-block;
+margin-top:40px;
+padding:12px 24px;
+border:2px solid #ff4500;
+border-radius:10px;
+color:#ff4500;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.back-button:hover{
+background:#ff4500;
+color:black;
+box-shadow:0 0 15px #ff4500;
+}
+
+</style>
 </head>
+
 <body>
 
-  <h1>The Quiet Pages — Stories</h1>
-  <p>Choose a story to begin reading:</p>
+<h1>The Quiet Pages</h1>
+<p>Choose a story and step into another world</p>
 
-  <a href="2-17.html" class="story-link">2:17</a>
-  <a href="index.html" class="back-button">⬅ Back to Home</a>
+<div class="story-section">
+
+<div class="story-container">
+
+<a href="2-17.html" class="story-card">
+<img src="file_000000004f88720784cdbd7e8a206f31.png" alt="2:17 Cover">
+<div class="story-title">2:17</div>
+</a>
+
+<a href="twilight.html" class="story-card">
+<img src="Twilightcover.png" alt="Twilight Cover">
+<div class="story-title">Twilight</div>
+</a>
+
+</div>
+
+</div>
+
+<a href="index.html" class="back-button">⬅ Back to Home</a>
 
 </body>
 </html>
